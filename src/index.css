@@ -5,9 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2b2a37;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header__img {
+  aspect-ratio: 5/1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.header__title {
+  position: absolute;
+  right: 1rem;
+  bottom: 5rem;
+}
+
+.header__button {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
 }
