@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Jugo de Naranja",
+      "price": "500"
+    },
+    {
+      "id": 2,
+      "name": "Jugo de Limon",
+      "price": "400"
+    },
+    {
+      "id": 3,
+      "name": "Ice Tea",
+      "price": "550"
+    },
+    {
+      "id": 4,
+      "name": "Licuado de banana",
+      "price": "600"
+    },
+    {
+      "id": 5,
+      "name": "Licuado Mixto",
+      "price": "700"
+    },
+    {
+      "name": "Jugo de Mandarina",
+      "price": "800",
+      "id": 6
+    },
+    {
+      "name": "Jugo de Frutilla ",
+      "price": "900",
+      "id": 7
+    },
+    {
+      "name": "Licuado de Pera",
+      "price": "500",
+      "id": 8
+    },
+    {
+      "name": "Licuado de Frutilla ",
+      "price": "800",
+      "id": 9
+    }
+  ]
+}
