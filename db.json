@@ -27,22 +27,22 @@
     },
     {
       "name": "Jugo de Mandarina",
-      "price": "800",
+      "price": "600",
       "id": 6
     },
     {
       "name": "Jugo de Frutilla ",
-      "price": "900",
+      "price": "500",
       "id": 7
     },
     {
       "name": "Licuado de Pera",
-      "price": "500",
+      "price": "1000",
       "id": 8
     },
     {
-      "name": "Licuado de Frutilla ",
-      "price": "800",
+      "name": "Licuado de Frutilla 2",
+      "price": "600",
       "id": 9
     }
   ]
