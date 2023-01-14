@@ -37,9 +37,9 @@ const Product = ({ product }) => {
     <tr>
       <td>{name}</td>
       <th>{price}</th>
-      <td>
+      <td className='d-flex justify-content-evenly'>
         <button
-          className='btn btn-warning'
+          className='btn btn-success'
           onClick={() => handleEdit(product)}
         >Editar
         </button>

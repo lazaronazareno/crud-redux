@@ -22,7 +22,7 @@ const Products = () => {
           <tr>
             <th className='text-warning fs-3'>Nombre</th>
             <th className='text-warning fs-3'>Precio</th>
-            <th className='text-warning fs-3'>Acciones</th>
+            <th className='text-warning fs-3 text-center'>Acciones</th>
           </tr>
         </thead>
         <tbody>

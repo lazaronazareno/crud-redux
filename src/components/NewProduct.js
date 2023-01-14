@@ -46,11 +46,11 @@ const NewProduct = () => {
     navigate('/')
   }
   return (
-    <div className='justify-content-center'>
-      <h1>Nuevo Producto</h1>
+    <div className='d-flex flex-column p-5 text-center'>
+      <h1 className='mb-4 text-warning'>Nuevo Producto</h1>
       <form
         onSubmit={onSubmit}
-        className='d-flex flex-column gap-2'
+        className='d-flex flex-column gap-4'
       >
         <div className='form-floating text-dark'>
           <input
@@ -74,7 +74,7 @@ const NewProduct = () => {
           />
           <label htmlFor='price'>Precio</label>
         </div>
-        <button type='submit' className='btn btn-success'>Agregar</button>
+        <button type='submit' className='btn btn-lg btn-success'>Agregar</button>
       </form>
       {loading ? <p>Cargando</p> : null}
       {error ? <p className='alert alert-danger p-2 mt-2 text-center'>Hubo un error</p> : null}

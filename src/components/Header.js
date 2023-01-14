@@ -10,9 +10,11 @@ const Header = () => {
         alt='background figure, midjourney art'
         className='header__img'
       />
-      <h1 className='header__title text-dark'><Link to='/' className='text-dark text-decoration-none'>CRUD REDUX</Link></h1>
+      <div className='header-div'>
+        <h1 className='header__title text-dark'><Link to='/' className='text-dark text-decoration-none'>CRUD REDUX</Link></h1>
 
-      <Link to='/products/new' className='header__button btn btn-success'>&#43; Agregar Producto</Link>
+        <Link to='/products/new' className='header__button btn btn-success'>&#43; Agregar Producto</Link>
+      </div>
     </nav>
   )
 }

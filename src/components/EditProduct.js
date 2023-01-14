@@ -40,11 +40,11 @@ const EditProduct = () => {
     navigate('/')
   }
   return (
-    <div className='justify-content-center'>
-      <h1>Editar Producto</h1>
+    <div className='d-flex flex-column p-5 text-center'>
+      <h1 className='mb-4 text-warning'>Editar Producto</h1>
       <form
         onSubmit={onSubmit}
-        className='d-flex flex-column gap-2'
+        className='d-flex flex-column gap-4'
       >
         <div className='form-floating text-dark'>
           <input
@@ -68,7 +68,7 @@ const EditProduct = () => {
           />
           <label htmlFor='price'>Precio</label>
         </div>
-        <button type='submit' className='btn btn-success'>Editar</button>
+        <button type='submit' className='btn btn-lg btn-success'>Editar</button>
       </form>
     </div>
   )
