@@ -16,7 +16,7 @@ function App () {
         <Routes>
           <Route exact path='/' element={<Products />} />
           <Route exact path='/products/new' element={<NewProduct />} />
-          <Route exact path='/products/:id' element={<EditProduct />} />
+          <Route exact path='/products/edit/:id' element={<EditProduct />} />
         </Routes>
       </Provider>
     </BrowserRouter>
