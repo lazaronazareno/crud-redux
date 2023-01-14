@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { addProductAction } from '../redux/actions/productActions'
+import { hideAlert, showAlert } from '../redux/actions/alertActions'
 
 const NewProduct = () => {
   const navigate = useNavigate()
@@ -9,6 +10,7 @@ const NewProduct = () => {
 
   const loading = useSelector(state => state.products.loading)
   const error = useSelector(state => state.products.error)
+  const alert = useSelector(state => state.alert.alert)
 
   const [values, setValues] = useState({
     name: '',
@@ -28,15 +30,23 @@ const NewProduct = () => {
     e.preventDefault()
 
     if (name.trim() === '' || price.trim() <= 0) {
+      const error = {
+        msg: 'Ambos Campos son obligatorios',
+        styles: 'alert alert-danger p-2 mt-2 text-center'
+      }
+
+      dispatch(showAlert(error))
       return
     }
+
+    dispatch(hideAlert())
 
     dispatch(addProductAction(values))
 
     navigate('/')
   }
   return (
-    <div className='row justify-content-center'>
+    <div className='justify-content-center'>
       <h1>Nuevo Producto</h1>
       <form
         onSubmit={onSubmit}
@@ -68,6 +78,7 @@ const NewProduct = () => {
       </form>
       {loading ? <p>Cargando</p> : null}
       {error ? <p className='alert alert-danger p-2 mt-2 text-center'>Hubo un error</p> : null}
+      {alert ? <p className={alert.styles}>{alert.msg}</p> : null}
     </div>
   )
 }
